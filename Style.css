@@ -18,7 +18,7 @@ body {
   padding: 0 20px;
 }
 
-/* Glass Effect - 100% Cross-browser */
+/* Glass Effect  */
 .glass {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -52,6 +52,7 @@ body {
   display: flex;
   list-style: none;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-list a {
@@ -60,16 +61,19 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 10px;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .nav-list a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* HAMBURGER */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  padding: 5px;
 }
 
 .hamburger span {
@@ -78,6 +82,7 @@ body {
   background: white;
   margin: 3px 0;
   transition: 0.3s;
+  border-radius: 2px;
 }
 
 /* Hero */
@@ -96,6 +101,7 @@ body {
   font-weight: 700;
   margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
+  line-height: 1.2;
 }
 
 .gradient-text {
@@ -181,6 +187,13 @@ body {
 
 .project-card {
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
 }
 
 .project-card img {
@@ -285,6 +298,8 @@ body {
 
 .contact-form {
   padding: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
 }
 
 .form-row {
@@ -360,15 +375,38 @@ footer a {
   color: #ff6b6b;
 }
 
-/* Responsive */
+/* RESPONSIVE - FIXED NAVBAR + BEAUTY INTACT */
 @media (max-width: 768px) {
-  .hamburger { display: flex; }
-  .nav-list { display: none; }
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-list {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 60, 114, 0.98);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  .nav-list.active {
+    display: flex;
+  }
   
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 100px 1rem;
+    gap: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
   
   .skills-grid,
@@ -379,6 +417,16 @@ footer a {
   }
   
   .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-nav {
+    padding: 1rem;
+  }
+  
+  .hero-content h1 {
     font-size: 2rem;
   }
 }
