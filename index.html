@@ -1,207 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MY Portfolio</title>
-  <meta name="description" content="Alith's Portfolio - Full-Stack Web Developer, Penetration Tester, Cyber Security & AI">
+
+  <title>Alith | Full-Stack Developer</title>
+
+  <meta name="description"
+    content="Alith Akhau Mach — Full-Stack Developer building modern, responsive websites and web applications.">
+
   <link rel="stylesheet" href="Style.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navigation -->
+  <!-- ================= NAVIGATION ================= -->
+
   <header>
     <nav class="site-nav">
+
       <div class="logo">
         <i class="fas fa-code"></i> Alith
       </div>
+
       <ul class="nav-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
       <div class="hamburger">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
     </nav>
   </header>
 
-  <!-- Hero Section -->
+
   <main id="home">
+
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
+
       <div class="hero-content">
-        <h1>Hi, I'm <span class="gradient-text">Alith Akhau Mach</span></h1>
-        <h2>&lt; Full-Stack Developer | Penetration Tester | Cyber Security & AI Enthusiast &gt;</h2>
-        <p>Building secure, scalable web applications with modern tech stacks</p>
+
+        <span class="hero-label">
+          FULL-STACK DEVELOPER
+        </span>
+
+        <h1>
+          I build
+          <span class="gradient-text">
+            modern web experiences
+          </span>
+          that work.
+        </h1>
+
+        <p>
+          I create responsive websites and web applications
+          for businesses, creators, and individuals using modern
+          web technologies.
+        </p>
+
         <div class="btn-group">
-          <a href="#contact" class="btn btn-primary">Contact Me</a>
-          <a href="cv.pdf" download class="btn btn-secondary">Download CV</a>
+
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Let's Work Together
+          </a>
+
         </div>
+
+        <div class="hero-tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Git</span>
+        </div>
+
       </div>
+
+
       <div class="hero-image">
-        <img src="Petro.jpg" alt="Alith Profile" class="profile-img">
+
+        <img src="Petro.jpg" alt="Alith Akhau Mach" class="profile-img">
+
       </div>
+
     </section>
 
-    <!-- About Section -->
+
+    <!-- ================= ABOUT ================= -->
+
     <section id="about" class="section">
+
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+
+        <h2 class="section-title">
+          About Me
+        </h2>
+
         <div class="about-grid">
+
           <div class="about-text">
-            <p>Full-Stack Developer passionate about creating secure web applications. Expert in Penetration Testing, AI/ML, and modern web technologies. I solve complex problems and build user-focused solutions.</p>
+
+            <p>
+              I'm a Full-Stack Developer focused on building
+              responsive, practical and user-friendly web
+              experiences.
+            </p>
+
+            <p>
+              I enjoy turning ideas into working products —
+              from business websites and dashboards to
+              e-commerce interfaces and web applications.
+            </p>
+
+            <p>
+              I'm also exploring cybersecurity, penetration
+              testing and AI, giving me a broader understanding
+              of modern technology and secure application
+              development.
+            </p>
+
             <div class="stats">
+
               <div class="stat">
-                <span class="stat-num" data-target="50">0</span>
-                <span>Projects</span>
+                <span class="stat-num">
+                  3+
+                </span>
+                <span>
+                  Featured Projects
+                </span>
               </div>
+
               <div class="stat">
-                <span class="stat-num" data-target="3">0</span>
-                <span>Years Exp</span>
+                <span class="stat-num">
+                  Full-Stack
+                </span>
+                <span>
+                  Development
+                </span>
               </div>
+
+              <div class="stat">
+                <span class="stat-num">
+                  Open
+                </span>
+                <span>
+                  For Freelance
+                </span>
+              </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- Projects Section -->
+
+    <!-- ================= PROJECTS ================= -->
+
     <section id="projects" class="section projects-section">
+
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
+
+        <h2 class="section-title">
+          Featured Projects
+        </h2>
+
+        <p class="section-subtitle">
+          A selection of projects I've built to demonstrate
+          my development skills and problem-solving ability.
+        </p>
+
+
         <div class="projects-grid">
+
+
+          <!-- FINANCIAL DASHBOARD -->
+
           <div class="project-card glass">
-            <img src="hp.png" alt="Hospital Management System">
+
+            <img src="financial-dashboard.png" alt="Financial Dashboard">
+
             <div class="project-info">
-              <h3>Hospital Management System</h3>
-              <p>Patient records, appointments, billing. Built with Python + SQL.</p>
-              <div class="project-links">
-                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+
+              <span class="project-number">
+                01
+              </span>
+
+              <h3>
+                Financial Dashboard
+              </h3>
+
+              <p>
+                A modern financial dashboard designed to
+                present financial information through a
+                clean and responsive interface.
+              </p>
+
+              <div class="project-tech">
+                <span>Tailwind CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>React</span>
+                <span>MongoDB</span>
               </div>
+
+              <div class="project-links">
+
+                <a href="https://financial-dashboard-kappa-blue.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- AMAZON CLONE -->
+
           <div class="project-card glass">
-            <img src="Security Dashboard.jpg" alt="Security Dashboard">
+
+            <img src="amazon-clone.png" alt="MyShop Pro E-commerce Project">
+
             <div class="project-info">
-              <h3>Security Dashboard</h3>
-              <p>Real-time cybersecurity monitoring and threat detection dashboard.</p>
-              <div class="project-links">
-                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+
+              <span class="project-number">
+                02
+              </span>
+
+              <h3>
+                MyShop Pro — E-commerce
+              </h3>
+
+              <p>
+                A responsive e-commerce interface featuring
+                product browsing, categories, search, cart,
+                orders and authentication interfaces.
+              </p>
+
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
               </div>
+
+              <div class="project-links">
+
+                <a href="https://alith37.github.io/amazon-clone/" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- GYM WEBSITE -->
+
+          <div class="project-card glass">
+
+            <img src="gym-website.png" alt="Gym Website">
+
+            <div class="project-info">
+
+              <span class="project-number">
+                03
+              </span>
+
+              <h3>
+                Gym Website
+              </h3>
+
+              <p>
+                A business-focused fitness website featuring
+                membership plans, trainers, classes, booking
+                and contact functionality.
+              </p>
+
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+
+                <a href="https://alith37.github.io/gym-website/" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+
+                <a href="https://github.com/Alith37/gym-website" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="section">
+
       <div class="container">
-        <h2 class="section-title">Skills & Technologies</h2>
+
+        <h2 class="section-title">
+          What I Can Build
+        </h2>
+
+        <p class="section-subtitle">
+          Practical web solutions for individuals,
+          creators and businesses.
+        </p>
+
+
         <div class="skills-grid">
+
+
           <div class="skill-group glass">
-            <h3>Programming Languages</h3>
-            <div class="languages">
-              <span>Python</span>
-              <span>JavaScript</span>
-              <span>HTML/CSS</span>
-              <span>SQL</span>
-              <span>C/C++</span>
-              <span>Java</span>
-            </div>
+
+            <i class="fas fa-laptop-code service-icon"></i>
+
+            <h3>
+              Business Websites
+            </h3>
+
+            <p>
+              Modern responsive websites for small
+              businesses, gyms, personal brands and
+              local services.
+            </p>
+
           </div>
+
+
           <div class="skill-group glass">
-            <h3>Core Skills</h3>
-            <ul>
-              <li><i class="fas fa-check"></i> Full-Stack Development</li>
-              <li><i class="fas fa-check"></i> Penetration Testing</li>
-              <li><i class="fas fa-check"></i> Data Analysis</li>
-              <li><i class="fas fa-check"></i> Git & Version Control</li>
-            </ul>
+
+            <i class="fas fa-shopping-cart service-icon"></i>
+
+            <h3>
+              E-commerce Websites
+            </h3>
+
+            <p>
+              Product-focused interfaces with categories,
+              search, shopping carts and customer-facing
+              experiences.
+            </p>
+
           </div>
+
+
+          <div class="skill-group glass">
+
+            <i class="fas fa-chart-line service-icon"></i>
+
+            <h3>
+              Dashboards
+            </h3>
+
+            <p>
+              Clean dashboards for presenting business,
+              financial or operational information.
+            </p>
+
+          </div>
+
+
+          <div class="skill-group glass">
+
+            <i class="fas fa-tools service-icon"></i>
+
+            <h3>
+              Website Improvements
+            </h3>
+
+            <p>
+              Fixing layouts, improving responsiveness,
+              updating content and adding frontend
+              functionality.
+            </p>
+
+          </div>
+
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- CONTACT SECTION  -->
-    <section id="contact" class="section contact-section">
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section">
+
       <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-wrapper">
-          <!-- Contact Info -->
-          <div class="contact-info glass">
-            <h3>Let's Connect</h3>
-            <p>Ready to start your next project? Send me a message!</p>
-            <div class="contact-links">
-              <a href="mailto:csepetro@gmail.com" class="contact-link">
-                <i class="fas fa-envelope"></i> csepetro@gmail.com
-              </a>
-              <a href="#" class="contact-link">
-                <i class="fab fa-linkedin"></i> LinkedIn
-              </a>
-              <a href="#" class="contact-link">
-                <i class="fab fa-github"></i> GitHub
-              </a>
+
+        <h2 class="section-title">
+          Skills & Technologies
+        </h2>
+
+
+        <div class="skills-grid">
+
+
+          <div class="skill-group glass">
+
+            <h3>
+              Development
+            </h3>
+
+            <div class="languages">
+
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>SQL</span>
+              <span>MongoDB</span>
+              <span>Python</span>
+
             </div>
+
           </div>
 
-          <!--  WORKING FORM -->
-          <form class="contact-form glass" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="a3cb38d7-0944-4eeb-9999-10e22c8738d0">
-            
-            <div class="form-row">
-              <div class="form-group">
-                <input type="text" name="name" required placeholder=" ">
-                <label>Name</label>
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" required placeholder=" ">
-                <label>Email</label>
-              </div>
+
+          <div class="skill-group glass">
+
+            <h3>
+              Tools & Technologies
+            </h3>
+
+            <div class="languages">
+
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>Vercel</span>
+              <span>Responsive Design</span>
+
             </div>
-            
-            <div class="form-group">
-              <input type="tel" name="phone" placeholder=" ">
-              <label>Phone</label>
-            </div>
-            
-            <div class="form-group">
-              <select name="service" required>
-                <option value="" disabled selected>Service</option>
-                <option value="web-development">Web Development</option>
-                <option value="pentesting">Penetration Testing</option>
-                <option value="cybersecurity">Cybersecurity</option>
-                <option value="ai">AI/ML</option>
-              </select>
-              <label>Service Type</label>
-            </div>
-            
-            <div class="form-group full">
-              <textarea name="message" rows="5" required placeholder=" "></textarea>
-              <label>Message</label>
-            </div>
-            
-            <button type="submit" class="btn btn-primary full">Send Message</button>
-          </form>
+
+          </div>
+
+
+          <div class="skill-group glass">
+
+            <h3>
+              Additional Interests
+            </h3>
+
+            <ul>
+
+              <li>
+                <i class="fas fa-check"></i>
+                Cybersecurity
+              </li>
+
+              <li>
+                <i class="fas fa-check"></i>
+                Penetration Testing
+              </li>
+
+              <li>
+                <i class="fas fa-check"></i>
+                Artificial Intelligence
+              </li>
+
+              <li>
+                <i class="fas fa-check"></i>
+                Data Analysis
+              </li>
+
+            </ul>
+
+          </div>
+
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section contact-section">
+
+      <div class="container">
+
+        <h2 class="section-title">
+          Let's Build Something
+        </h2>
+
+        <p class="section-subtitle">
+          Have a project, website idea or problem you
+          want to solve? Let's talk.
+        </p>
+
+
+        <div class="contact-wrapper">
+
+
+          <div class="contact-info glass">
+
+            <h3>
+              Let's Connect
+            </h3>
+
+            <p>
+              I'm currently open to freelance web
+              development opportunities and collaborations.
+            </p>
+
+
+            <div class="contact-links">
+
+              <a href="mailto:csepetro@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                csepetro@gmail.com
+              </a>
+
+
+              <a href="https://github.com/Alith37" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+
+
+              <a href="#" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- CONTACT FORM -->
+
+          <form class="contact-form glass" id="contactForm">
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <input type="text" name="name" id="name" required placeholder=" ">
+
+                <label>Name</label>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <input type="email" name="email" id="email" required placeholder=" ">
+
+                <label>Email</label>
+
+              </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <input type="tel" name="phone" id="phone" placeholder=" ">
+
+              <label>Phone</label>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <select name="service" id="service" required>
+
+                <option value="" disabled selected>
+                  Service
+                </option>
+
+                <option value="business-website">
+                  Business Website
+                </option>
+
+                <option value="ecommerce">
+                  E-commerce Website
+                </option>
+
+                <option value="dashboard">
+                  Dashboard
+                </option>
+
+                <option value="website-improvement">
+                  Website Improvement
+                </option>
+
+                <option value="other">
+                  Other
+                </option>
+
+              </select>
+
+              <label>
+                Service Type
+              </label>
+
+            </div>
+
+
+            <div class="form-group full">
+
+              <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
+
+              <label>
+                Tell me about your project
+              </label>
+
+            </div>
+
+
+            <div id="formStatus" class="form-status" style="display: none;" role="alert"></div>
+
+            <button type="submit" class="btn btn-primary full">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
-  
-<footer>
-  <div class="container">
-    <p>© 2026 Alith. Built with ❤️ | 
-       <a href="mailto:csepetro@gmail.com">csepetro@gmail.com</a> | 
-       <a href="https://github.com/Alith37" target="_blank">GitHub</a></p>
-  </div>
-</footer>
- 
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <p>
+        © 2026 Alith Akhau Mach.
+        Built with HTML, CSS & JavaScript.
+        |
+        <a href="mailto:csepetro@gmail.com">
+          Email
+        </a>
+        |
+        <a href="https://github.com/Alith37" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </p>
+
+    </div>
+
+  </footer>
+
 
   <script src="script.js"></script>
+
 </body>
+
 </html>
