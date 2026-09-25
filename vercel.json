@@ -4,6 +4,10 @@
     {
       "src": "backend/main.py",
       "use": "@vercel/python"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -12,7 +16,8 @@
       "dest": "backend/main.py"
     },
     {
-      "handle": "filesystem"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
