@@ -1,3 +1,4 @@
+
 import os
 import re
 import urllib.parse
@@ -48,33 +49,27 @@ def sanitize_mongo_uri(raw_uri: str) -> str:
     if not raw_uri:
         return raw_uri
 
-    prefix = "mongodb+srv://"
+    # Strip surrounding whitespace and optional quotes (single or double)
+    raw_uri = raw_uri.strip().strip('"\'')
 
-    if raw_uri.startswith(prefix):
-        rest = raw_uri[len(prefix):]
-        at_idx = rest.rfind("@")
-
-        if at_idx != -1:
-            user_pass = rest[:at_idx]
-            host_and_options = rest[at_idx + 1:]
-
-            if ":" in user_pass:
-                username, password = user_pass.split(":", 1)
-
-                # Remove accidental angle brackets if present
-                password = password.strip("<>")
-
-                # Decode first in case it is already encoded,
-                # then encode it correctly.
-                password = urllib.parse.unquote_plus(password)
-                password = urllib.parse.quote_plus(password)
-
-                return (
-                    f"{prefix}"
-                    f"{username}:{password}"
-                    f"@{host_and_options}"
-                )
-
+    # Support both SRV and standard connection strings
+    prefixes = ["mongodb+srv://", "mongodb://"]
+    for prefix in prefixes:
+        if raw_uri.startswith(prefix):
+            rest = raw_uri[len(prefix):]
+            at_idx = rest.rfind("@")
+            if at_idx != -1:
+                user_pass = rest[:at_idx]
+                host_and_options = rest[at_idx + 1:]
+                if ":" in user_pass:
+                    username, password = user_pass.split(":", 1)
+                    # Remove accidental angle brackets if present
+                    password = password.strip("<>")
+                    # Decode first in case it is already encoded,
+                    # then encode it correctly.
+                    password = urllib.parse.unquote_plus(password)
+                    password = urllib.parse.quote_plus(password)
+                    return f"{prefix}{username}:{password}@{host_and_options}"
     return raw_uri
 
 
@@ -128,6 +123,7 @@ ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:3000",
     "http://localhost:3000",
+    "https://my-personal-porfolio-peach.vercel.app",
 ]
 
 app.add_middleware(
