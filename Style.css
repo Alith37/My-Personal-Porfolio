@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   background: #070b14;
   color: #f5f7fb;
   line-height: 1.7;
@@ -50,7 +50,7 @@ select {
 
 .section-title {
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   line-height: 1.2;
   margin-bottom: 1.2rem;
@@ -213,7 +213,7 @@ select {
 }
 
 .hero-content h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", sans-serif;
   font-size: clamp(3rem, 6vw, 5.3rem);
   line-height: 1.08;
 
@@ -439,7 +439,7 @@ select {
 .project-info h3 {
   margin: 8px 0 12px;
 
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.45rem;
 }
 
@@ -540,7 +540,7 @@ select {
 .skill-group h3 {
   margin-bottom: 13px;
 
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
 }
 
@@ -633,7 +633,7 @@ select {
 .contact-info h3 {
   margin-bottom: 12px;
 
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
 }
 
